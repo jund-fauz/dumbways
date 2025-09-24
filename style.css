@@ -1,0 +1,47 @@
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    max-width: 500px;
+}
+
+button {
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: medium;
+    border-radius: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: grey;
+    }
+}
+
+.pointer-hover, i {
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > img {
+        width: 200px;
+    }
+
+    & * {
+        margin: 5px 0;
+    }
+}
