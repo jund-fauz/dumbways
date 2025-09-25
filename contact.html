@@ -4,14 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dumbways</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+    <title>Contact Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -30,48 +23,47 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">My Project</a>
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">My Project</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <a href="contact.html" class="btn btn-dark">Contact Me</a>
+                    <a href="#" class="btn btn-dark">Contact Me</a>
                 </form>
             </div>
         </div>
     </nav>
-    <div class="d-flex bg-white m-5 p-5 gap-5">
-        <div class="d-flex flex-column gap-3">
-            <h1>Hai, Selamat Datang di Website Saya!</h1>
-            <p>Tahukah kamu? Ternyata, gurita memiliki tiga jantung dan darah berwarna biru karena mengandung
-                hemocyanin,
-                bukan hemoglobin seperti
-                manusia. Dua jantungnya khusus memompa darah ke insang, sementara satu lagi bertugas mengalirkan darah
-                ke
-                seluruh tubuh.
-                Uniknya, jantung utama gurita berhenti berdetak ketika ia sedang berenang, sehingga hewan ini lebih suka
-                merayap di
-                dasar laut daripada terus-menerus berenang untuk menghemat energi.</p>
-            <div class="d-flex gap-1 align-items-center">
-                <button class="btn btn-dark">Tahu!</button>
-                <p class="pointer-hover">Unduh informasi ini <i class="fa-solid fa-download"></i></p>
+    <div class="d-flex flex-column align-items-center p-5 gap-3">
+        <h1 class="text-uppercase fw-bold">get in touch</h1>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
             </div>
-            <div class="d-flex g-2 mt-4">
-                <i class="fa-brands fa-linkedin fa-2xl"></i>
-                <i class="fa-brands fa-square-instagram fa-2xl"></i>
-                <i class="fa-brands fa-facebook fa-2xl"></i>
-                <i class="fa-brands fa-square-twitter fa-2xl"></i>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="assets/me.png" alt="PP">
-            <div class="card-body">
-                <h5 class="card-title">Mujadid Jundi Fauzi</h5>
-                <p class="card-text">Fullstack Developer</p>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1">
             </div>
-        </div>
+            <div class="mb-3">
+                <label for="exampleSelect" class="form-label">Subject</label>
+                <select class="form-select" aria-label="Default select example" id="exampleSelect">
+                    <option selected>Urgent</option>
+                    <option value="1">Error</option>
+                    <option value="2">Opinion</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark rounded-5">Submit</button>
+        </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
