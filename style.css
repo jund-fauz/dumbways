@@ -6,11 +6,46 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-p {
+.mw500 {
     max-width: 500px;
-    margin: 0;
 }
 
 .pointer-hover, i {
     cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+}
+
+.w25px {
+    width: 25px;
+}
+
+.text-gray {
+    color: #828080;
+}
+
+.card-body > a {
+    text-decoration: none;
+    color: black;
+}
+
+.h250px {
+    height: 250px;
+}
+
+.card > img {
+    padding: 8px;
+    border-radius: 16px;
+}
+
+.w7525 {
+    &>img {
+        flex-grow: 2;
+    }
+
+    &>div {
+        flex-grow: 1;
+    }
 }
