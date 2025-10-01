@@ -13,12 +13,8 @@ form.addEventListener("submit", function () {
         if (checkbox.value == '') technologies += technologies == '' ?  checkbox.id : `,${checkbox.id}`
     })
     let description = document.getElementById("description").value
-    let image = document.getElementById("image").files[0]
-    const fr = new FileReader()
-    fr.readAsDataURL(image)
-    fr.onload = function () {
-        image = fr.result
-    }
+    let imageFile = document.getElementById("image").files[0]
+    let image = imageFile ? URL.createObjectURL(imageFile) : 'https://via.placeholder.com/250'
 
     let datas = JSON.parse(localStorage.getItem("datas")) || []
     datas.push({ id: datas.length, title, startDate, endDate, duration, description, technologies, image })
@@ -29,8 +25,7 @@ form.addEventListener("submit", function () {
 
 let datas = JSON.parse(localStorage.getItem('datas')) || []
 
-if (datas.length !== 0) datas.forEach(data => {
-    document.getElementById('container').innerHTML += `
+document.getElementById("container").innerHTML = datas.length === 0 ? '<h3 class="text-center flex-grow-1">Belum ada project</h3>' : datas.map(data => `
     <div class="card" style="width: 18rem;">
                 <img class="h250px" src="${data.image}"
                     class="card-img-top" alt="Coding 1">
@@ -47,5 +42,4 @@ if (datas.length !== 0) datas.forEach(data => {
                     </div>
                 </div>
             </div>
-    `
-})
+    `)
